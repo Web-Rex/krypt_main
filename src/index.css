@@ -9,3 +9,10 @@
  .clip-path{
     clip-path: polygon(36% 0, 74% 3%, 100% 0, 100% 96%, 65% 99%, 31% 97%, 0 99%, 0 5%);
  }
+
+ ._title_ {
+    @apply bg-slate-100 p-4 text-[1rem] capitalize font-[500];
+ }
+ ._sub_title_ {
+    @apply bg-white p-3;
+ }

@@ -16,7 +16,7 @@ function Product() {
   const [form_data, setForm_data] = useState({
     email: "",
     firstName: "",
-    lastName: ""
+    lastName: "",
   });
 
   useEffect(() => {
@@ -45,10 +45,10 @@ function Product() {
   };
 
   const edit_form_data = (e) => {
-    setForm_data(priv => {
-      return {...priv, [e.target.name]: e.target.value};
-    })
-  }
+    setForm_data((priv) => {
+      return { ...priv, [e.target.name]: e.target.value };
+    });
+  };
 
   const pay_with_stacks = (e) => {
     e.preventDefault();
@@ -62,20 +62,25 @@ function Product() {
       amount: 100 * 100,
       currency: "NGN",
       // currency: "USD", // ----- Currency not supported by merchant
-      onSuccess: (transaction) => {
-        console.log(transaction);
-        setPopUp(priv => false);
+      onSuccess: (response) => {
+        console.log("OnSuccess: ", response?.reference);
+        setPopUp((priv) => false);
+        navigate("/transaction", {
+          state: {
+            userId: response?.reference,
+          },
+        });
       },
       onLoad: (response) => {
-        console.log("onLoad: ", response);
+        console.log("OnLoad: ", response);
       },
-      onCancel: () => {
-        console.log("onCancel");
-        setPopUp(priv => false);
+      onCancel: (response) => {
+        console.log("OnCancel: ", response);
+        setPopUp((priv) => false);
       },
       onError: (error) => {
-        console.log("Error: ", error.message);
-        setPopUp(priv => false);
+        console.log("Error: ", error);
+        setPopUp((priv) => false);
       },
     });
   };
