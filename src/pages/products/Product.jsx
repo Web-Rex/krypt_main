@@ -103,7 +103,7 @@ function Product() {
             <form onSubmit={pay_with_stacks} className="max-w-sm mx-auto">
               <label
                 htmlFor="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-gray-900"
               >
                 Your email
               </label>
@@ -114,12 +114,12 @@ function Product() {
                 onChange={edit_form_data}
                 required
                 aria-describedby="helper-text-explanation"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@flowbite.com"
               />
               <label
                 htmlFor="firstName"
-                className="block my-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block my-2 text-sm font-medium text-gray-900"
               >
                 Your first name
               </label>
@@ -130,12 +130,12 @@ function Product() {
                 onChange={edit_form_data}
                 required
                 aria-describedby="helper-text-explanation"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Adam"
               />
               <label
                 htmlFor="lastName"
-                className="block my-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block my-2 text-sm font-medium text-gray-900"
               >
                 Your last name
               </label>
@@ -146,7 +146,7 @@ function Product() {
                 onChange={edit_form_data}
                 required
                 aria-describedby="helper-text-explanation"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Smith"
               />
 
@@ -247,11 +247,11 @@ function Product() {
                     onClick={() => setPopUp((priv) => !priv)}
                     className=" bg-black  text-white py-1 rounded-full font-medium font-mono"
                   >
-                    Mint
+                    Buy Now
                   </button>
                   <section className=" px-5 flex flex-col">
                     <span className=" font-semibold text-lg">
-                      Mint your KRYPT NFT Collection Now!
+                      Buy your KRYPT NFT Collection Now!
                     </span>
                     <br />
                   </section>
